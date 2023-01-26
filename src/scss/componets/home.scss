@@ -3,7 +3,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 900px;
+    height: 100vh;
     padding: 265px 0;
 
     &__content {
@@ -29,5 +29,46 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+}
+
+@media (max-width:992px) {
+    .home {
+        padding:200px 0;
+        height: 750px;
+
+        &__title {
+            font-size: 50px;
+        }
+    }
+}
+@media (max-width:768px) {
+    .home {
+        padding:200px 0;
+        height: 750px;
+
+        &__subtitle{
+            font-size: 20px;
+        }
+
+        &__title {
+            font-size: 50px;
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .home {
+        padding:150px 0;
+        height: 725px;
+
+        &__title {
+            font-size: 40px;
+        }
+
+        &__footer {
+            flex-direction: column;
+            width: 100%;
+        }
     }
 }
