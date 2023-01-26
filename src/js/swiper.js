@@ -1,4 +1,4 @@
-import Swiper from 'swiper'
+import Swiper, { Navigation } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
@@ -7,6 +7,7 @@ const swiper = new Swiper(".commentsSwiper", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
         },
+        modules: [Navigation],
   });
 
 export default swiper

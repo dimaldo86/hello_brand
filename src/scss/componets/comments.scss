@@ -1,4 +1,80 @@
 .comments {
     background-color: var(--primary);
     padding: 220px 0;
+
+    &__item {
+        padding: 0 148px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        margin-top: 34px;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 1.11;
+        color: var(--secondary);
+    }
+
+    &__text {
+        margin-top: 20px;
+        line-height: 2.5;
+    }
+
+    &__author {
+        margin-top: 40px;
+        color:var(--secondary);
+        font-size: 24px;
+        line-height: 1.67;
+        letter-spacing: 0.245em;
+        text-transform: uppercase;
+    }
+
+    .swiper-button-next, .swiper-button-prev{
+        width: 21px;
+        height: 21px;
+        color: var(--secondary);
+        cursor: pointer;
+    }
+    .swiper-button-next {
+        right: 0;
+    }
+    .swiper-button-prev {
+        left: 0;
+    }
+
+    .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled  {
+        color: var(--white);
+        opacity: 1;
+    }
+}
+@media only screen and (min-width : 1024px) and (max-width : 1200px) {
+    .comments {
+        &__title {
+            font-size: 30px;
+        }
+    }
+}
+@media (max-width:1023px) {
+    .comments {
+        padding: 150px 0;
+
+        &__title {
+            font-size: 30px;
+        }
+
+        &__item {
+            padding: 0 57px;
+        }
+
+        svg {
+            width: 73px;
+            height: 48px;
+        }
+    }
+}
+
+@media (max-width:768px) {
+
 }
