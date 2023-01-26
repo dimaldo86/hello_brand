@@ -1,4 +1,5 @@
-import './src/css/main.css'
+import './src/scss/main.scss'
+import './src/js/index'
 
 
 

@@ -1,0 +1,19 @@
+.btn {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width: 270px;
+    height: 100px;
+    background: var(--primary);
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--white);
+    border: transparent;
+    outline: none;
+    transition: var(--transition);
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--secondary);
+    }
+}
