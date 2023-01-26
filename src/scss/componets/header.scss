@@ -2,6 +2,13 @@
     position: fixed;
     width: 100%;
     padding-top: 55px;
+    transition: all 0.8s ease-in-out;
+    background-color:black;
+    z-index: 999;
+
+    &.hide {
+        transform: translateY(-130px);
+    }
 
     &__nav {
         width: 100%;
