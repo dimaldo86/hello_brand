@@ -5,7 +5,11 @@
     const scrollPosition = () => window.pageYOffset || document.documentElement.scrollTop;
     const containHide = () => header.classList.contains('hide');
     window.addEventListener('scroll', () => {
-
+        if( window.pageYOffset > 160) {
+            header.style.background = 'black'
+        } else {
+            header.style.background = 'transparent'
+        }
         if(scrollPosition() > lastScroll && !containHide() && scrollPosition() > defaultOffset) {
             header.classList.add('hide');
         }
