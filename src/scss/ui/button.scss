@@ -14,10 +14,20 @@
     cursor: pointer;
 
     &:hover {
-        background-color: var(--secondary);
+        background-color: var(--primary-hover);
+    }
+
+    &-middle {
+        width: 270px;
+        height: 100px;
     }
 }
 
+@media (max-width:768px) {
+    .btn-middle {
+        height: 80px;
+    }
+}
 @media (max-width:576px) {
     .btn {
         width: 100%;

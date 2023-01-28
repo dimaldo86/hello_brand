@@ -36,6 +36,10 @@ body.lock {
     visibility: hidden;
     z-index: 48;
     transition: var(--transition);
+
+    &__modal {
+        z-index: 2000;
+    }
 }
 .overlay.active {
     opacity: 1;
